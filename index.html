@@ -11,25 +11,33 @@
     <form>
       <p>
         <label for="mail">enter your email:</label>
-        <input type="email" name="mail" id="mail" required>
+        <input type="email" name="mail" id="mail" required />
       </p>
       <p>
         <label for="country">enter your country:</label>
-        <input type="text" name="country" id="country" required>
+        <input
+          type="text"
+          name="country"
+          id="country"
+          required
+          min="00501"
+          max="99950"
+        />
       </p>
       <p>
         <label for="zipCode">enter your zip Code:</label>
-        <input type="number" name="zipCode" id="zipCode" required>
+        <input type="number" name="zipCode" id="zipCode" required />
       </p>
       <p>
         <label for="pwd">enter your password:</label>
-        <input type="password" name="pwd" id="pwd" required>
+        <input type="password" name="pwd" id="pwd" required />
       </p>
       <p>
         <label for="pwdRe">Re-enter password:</label>
-        <input type="password" name="pwdRe" id="pwdRe" required>
+        <input type="password" name="pwdRe" id="pwdRe" required />
       </p>
       <button type="submit">submit</button>
     </form>
+    <script src="main.js"></script>
   </body>
 </html>
