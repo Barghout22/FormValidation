@@ -8,7 +8,7 @@
     <title>My Form</title>
   </head>
   <body>
-    <form>
+    <form novalidate>
       <p>
         <label for="mail">enter your email:</label>
         <input type="email" name="mail" id="mail" required />
@@ -20,17 +20,30 @@
           name="country"
           id="country"
           required
-          min="00501"
-          max="99950"
+          pattern="[A-Za-z]+"
         />
       </p>
       <p>
         <label for="zipCode">enter your zip Code:</label>
-        <input type="number" name="zipCode" id="zipCode" required />
+        <input
+          type="number"
+          name="zipCode"
+          id="zipCode"
+          required
+          min="10000"
+          max="99999"
+        />
       </p>
       <p>
         <label for="pwd">enter your password:</label>
-        <input type="password" name="pwd" id="pwd" required />
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          required
+          minlength="8"
+          maxlength="20"
+        />
       </p>
       <p>
         <label for="pwdRe">Re-enter password:</label>
